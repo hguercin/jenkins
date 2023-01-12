@@ -8,4 +8,7 @@ node {
     stage('run') {
         sh label: 'script', script: 'java Main'
     }
+    stage('repertoire') {
+        sh label: 'script', script: 'ls -ltr'
+    }
 }
